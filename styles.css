@@ -699,6 +699,7 @@ section {
     color: var(--text-gray);
     pointer-events: none;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 .form-group input:not(:placeholder-shown) + label,
@@ -754,6 +755,7 @@ section {
 .footer-social {
     display: flex;
     gap: 1rem;
+    text-align: center;
 }
 
 .footer-social a {
@@ -903,4 +905,23 @@ section {
     .mobile-menu-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
+}
+
+/* Text justification for content sections */
+p, .lead, .about-text p, .expertise-card p, .project-content p, 
+.contact-text p, .footer-content p {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+/* Keep certain elements center-aligned */
+.section-header, .hero-content, .footer-social {
+    text-align: center;
+}
+
+/* Keep form labels left-aligned */
+.form-group label {
+    text-align: left;
 }
