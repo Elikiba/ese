@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Projects</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    /* Sticky Navbar */
+    .navbar {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    body { 
+      padding-top: 56px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* About Section */
+    .about-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .about-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .about-section img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      color: #333;
+    }
+    /* Projects Section */
+    .projects-section h2 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+    .card {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card-img-top {
+      max-height: 180px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 1.25rem;
+    }
+    .card-text {
+      margin-bottom: 15px;
+    }
+    /* Skills Section */
+    .skills-section h2 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+    .skills-card {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      padding: 15px;
+      background: #fff;
+    }
+    .skills-card h5 {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
+    .skills-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .skills-card ul li {
+      margin-bottom: 5px;
+    }
+    /* Contact Section */
+    .contact-section {
+      padding: 50px 0;
+    }
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .contact-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .social-icon {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    .social-icon:hover {
+      opacity: 0.7;
+    }
+    .contact-section a {
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .contact-section a:hover {
+      color: #ddd;
+    }
+    /* Navigation link styling */
+    .navbar-nav .nav-link {
+      color: white;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa;
+    }
+    @media (max-width: 992px) {
+      .navbar-collapse {
+        background-color: #343a40;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About</h2>
+      <img src="Images/About/Mami O.jpg" alt="About Me">
+      <p>Hello! I'm Christabel Iyamu, a data scientist and cloud solutions professional based in Manchester. I hold a Master’s degree in Data Science from the University of Salford, with expertise in data analytics, machine learning, and cloud computing.
+
+        With a strong technical foundation, my skill set includes data visualization (Power BI, Excel, Tableau), data manipulation and database management (MySQL, PostgreSQL, Python, R), machine learning and AI (TensorFlow, Scikit-Learn), and cloud computing (AWS, GCP, Azure).
+        
+        I am passionate about transforming data into actionable insights that drive business growth and operational efficiency. My approach is rooted in problem-solving, collaboration, and innovation, ensuring that data-driven solutions create tangible impact.
+        
+        Explore my portfolio to see the projects and solutions I have developed, demonstrating my ability to harness data science and cloud technologies to solve real-world challenges.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <!-- Project 1: Heart Disease Prediction -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#project1Modal">
+              <img src="Images/Projects/Heart.jpg" class="card-img-top" alt="Heart Disease Prediction">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Heart Disease Prediction</h5>
+              <p class="card-text">Developed a machine learning framework using a large CDC dataset to predict heart disease risk. Click to view details.</p>
+              <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#project1Modal">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2: Statistical Analysis -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#project2Modal">
+              <img src="Images/Projects/GDP.jpg" class="card-img-top" alt="Project 2">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Statistical Analysis of Economic Indicators on GDP in Sample Asia and Africa Countries</h5>
+              <p class="card-text">This study examines the relationship between key economic indicators and GDP growth in selected Asian and African countries. Using statistical analysis, it explores how factors such as foreign direct investment, trade, and industrial output influence economic performance.</p>
+              <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#project2Modal">View Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3: Classification using Unsupervised learning -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <a href="#" data-toggle="modal" data-target="#project3Modal">
+              <img src="Images/Projects/Child Mortality .jpg" class="card-img-top" alt="Project 3">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Classification of Countries Based on Child Mortality and Health Spending</h5>
+              <p class="card-text">This study explores the relationship between child mortality rates and healthcare spending across countries. Using clustering algorithms, it categorizes nations based on economic and healthcare similarities, providing insights for global health policy and resource allocation.".</p>
+              <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#project3Modal">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project 4: Analysis of Bank Marketing Campaign -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+          <a href="#" data-toggle="modal" data-target="#project4Modal">
+            <img src="Images/Projects/Bank Marketing.jpg" class="card-img-top" alt="Project 4">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Analysis on the Impact of Bank Marketing Campaigns on Long-Term Deposit Promotions through Classification Algorithm</h5>
+            <p class="card-text">This project analyzes the effectiveness of bank marketing campaigns in driving long-term deposit subscriptions. By applying classification algorithms, it identifies key factors influencing customer engagement and optimizes marketing strategies for financial institutions.</p>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#project4Modal">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Project 1 Modal -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project1ModalLabel">Heart Disease Prediction</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Overview:</strong> This project developed an accurate, machine learning–driven framework for predicting heart disease. Leveraging a large dataset of 319,794 records from the Center for Disease Control CDC, the goal was to bridge the gap between data-driven research and practical application in healthcare. The project focused on building robust predictive models and deploying the best-performing model into a web-based application for real-time use by healthcare professionals.</p>
+          <p><strong>Problem Statement:</strong> Heart disease remains one of the leading causes of global mortality, and early detection is critical for improving patient outcomes. This project addresses the challenge of early diagnosis by analyzing extensive health and demographic data, overcoming issues like high-dimensional data and class imbalance, and delivering a user-friendly solution for clinical settings.</p>
+          <p><strong>Methodology:</strong></p>
+          <ul>
+            <li><strong>Data Acquisition & Preprocessing:</strong> Collected and cleaned over 319,000 records. Applied techniques such as ordinal encoding, standard scaling, and SMOTE to balance the data..</li>
+            <li><strong>Exploratory Data Analysis (EDA):</strong> Performed univariate and bivariate analysis with visualizations to uncover trends and relationships.</li>
+            <li><strong>Feature Selection:</strong> Employed Recursive Feature Elimination (RFE) to reduce dimensionality and focus on the most important predictors.</li>
+            <li><strong>Model Development:</strong> Developed and compared Decision Tree, Random Forest, and XGBoost classifiers. Models were optimized via hyperparameter tuning, with XGBoost emerging as the top performer.</li>
+            <li><strong>Deployment:</strong> Integrated the best-performing model into a web-based tool for real-time predictions by healthcare professionals.</li>
+          </ul>
+          <p><strong>Tools & Technologies:</strong></p>
+            <ul>
+                <li><strong>Programming & Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, XGBoost</li>
+                <li><strong>Frameworks & Platforms:</strong> Flask (for web deployment), Jupyter Notebook GitHub</li>
+                <li><strong>Methodologies:</strong> CRISP-DM framework, Recursive Feature Elimination, Hyperparameter Tuning, SMOTE for handling class imbalance</li>
+            </ul>
+          <p><strong>Results:</strong> Achieved robust performance with XGBoost, including a 90% accuracy and a balanced F1-score across cross-validation folds.</p>
+          <p><strong>Real-World Application:</strong>The deployed web-based tool empowers healthcare professionals to make data-driven decisions quickly, potentially improving early diagnosis and patient outcomes.</p>
+          <p><strong>Conclusion:</strong>This project demonstrates a complete data science pipeline—from data cleaning and EDA to model development, evaluation, and real-world deployment. It highlights technical proficiency in machine learning and data analytics while showcasing the potential for impactful applications in healthcare. Future work may include incorporating additional datasets and refining the predictive capabilities of the model</p>
+          <hr />
+          <p><strong>Source Code:</strong></p>
+          <p>Click the button below to view the complete source code on GitHub.</p>
+          <a href="https://github.com/christabelosas/Portfolio-Project/blob/main/Heart%20Disease%20Prediction.ipynb" target="_blank" class="btn btn-primary">View Source Code</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 Modal -->
+  <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project2ModalLabel">Statistical Analysis of Economic Indicators on GDP in Sample Asia and Africa Countries</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p><strong>Overview:</strong> This study examines the relationship between key economic indicators and GDP growth rates in selected countries across Asia and Africa. By leveraging statistical techniques, the project aims to understand the impact of variables such as foreign direct investment, trade, household consumption, gross savings, and industrial output on GDP.</p>
+
+        <p><strong>Problem Statement:</strong> GDP is a fundamental measure of a nation's economic performance. Identifying the key drivers behind GDP growth can aid policymakers and businesses in making informed economic decisions. This analysis investigates whether significant differences exist in the factors influencing GDP in Asia versus Africa.</p>
+
+        <p><strong>Methodology:</strong></p>
+        <ul>
+          <li><strong>Data Acquisition & Preparation:</strong> The dataset, covering 10 years (2010–2019), was sourced from the World Bank. Data cleaning and preprocessing were performed to remove missing values and normalize key indicators.</li>
+          <li><strong>Descriptive Statistical Analysis:</strong> Measures such as mean, standard deviation, skewness, and kurtosis were used to assess GDP trends in both continents.</li>
+          <li><strong>Correlation Analysis:</strong> Pearson correlation coefficients were computed to identify relationships between GDP and economic indicators.</li>
+          <li><strong>Hypothesis Testing:</strong> A Welch t-test was conducted to determine whether GDP growth rates in Asia and Africa differ significantly.</li>
+          <li><strong>Regression Modeling:</strong> A multiple linear regression model was developed to predict GDP growth rates based on economic indicators.</li>
+        </ul>
+
+        <p><strong>Key Findings:</strong></p>
+        <ul>
+          <li>Asian countries exhibited a higher average GDP growth rate (4.57%) compared to African countries (2.98%).</li>
+          <li>Industrial value-added and gross savings showed strong positive correlations with GDP, indicating their importance in driving economic growth.</li>
+          <li>Surprisingly, household consumption and internet penetration had negative correlations with GDP in Asia, contrary to previous studies.</li>
+          <li>Regression analysis revealed that industry growth and gross savings are significant predictors of GDP in both regions.</li>
+        </ul>
+
+        <p><strong>Real-World Applications:</strong></p>
+        <ul>
+          <li>Governments and financial institutions can use these findings to inform economic policies and investment strategies.</li>
+          <li>The predictive model developed in this study can help in forecasting future GDP growth based on selected economic indicators.</li>
+        </ul>
+
+        <p><strong>Conclusion:</strong> This project provides valuable insights into the economic structures of Asia and Africa. The study highlights key economic drivers and reveals significant differences between the two regions. Future research could expand the scope to include additional macroeconomic factors and explore causality rather than correlation.</p>
+
+        <hr />
+        <p><strong>Source Code:</strong></p>
+        <p>Click the button below to view the complete source code on GitHub.</p>
+        <a href="https://github.com/christabelosas/Statistical-Analysis-Project/blob/main/.Rhistory" target="_blank" class="btn btn-primary">View Source Code</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Project 3 Modal -->
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project3ModalLabel">Classification of Countries Based on Child Mortality and Health Spending</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Overview:</strong> This study applies machine learning clustering techniques to classify countries based on their child mortality rates and health spending. The goal is to analyze the relationship between healthcare investment and child survival rates, identifying patterns across different nations.</p>
+
+            <p><strong>Problem Statement:</strong> Child mortality remains a significant global issue, particularly in **low-income regions with inadequate healthcare infrastructure**. This project aims to explore the extent to which health spending influences child mortality and identify countries with similar economic and healthcare patterns.</p>
+    
+            <p><strong>Methodology:</strong></p>
+            <ul>
+              <li><strong>Data Acquisition & Preparation:</strong> Data sourced from Kaggle, including health expenditure and child mortality rates for 167 countries.</li>
+              <li><strong>Data Preprocessing:</strong> Checked for missing values, removed outliers in child mortality rates, and normalized data for consistency.</li>
+              <li><strong>Clustering Algorithms:</strong> Applied **K-Means** and **DBSCAN** algorithms to group countries based on health spending and mortality rates.</li>
+              <li><strong>Evaluation Metrics:</strong> Used **Elbow Method** to determine optimal clusters for K-Means and **Silhouette Score** to evaluate clustering quality.</li>
+            </ul>
+    
+            <p><strong>Results:</strong></p>
+            <ul>
+              <li>K-Means identified **three distinct country clusters** based on mortality and health spending trends.</li>
+              <li>DBSCAN revealed **high-density regions** with similar economic and healthcare structures but introduced noise in outlier cases.</li>
+              <li>The **Silhouette Score for K-Means was 0.446**, indicating moderate cluster cohesion, while DBSCAN struggled with defining distinct boundaries.</li>
+            </ul>
+    
+            <p><strong>Real-World Applications:</strong></p>
+            <ul>
+              <li>Governments and health organizations can **use these insights to allocate resources effectively** and reduce child mortality rates.</li>
+              <li>Policymakers can **identify underperforming countries** and implement targeted interventions to improve healthcare access.</li>
+            </ul>
+    
+            <p><strong>Conclusion:</strong> This study highlights the importance of **health spending in reducing child mortality** and provides a data-driven approach for classifying countries based on economic and healthcare similarities. The findings suggest that increasing healthcare investment can significantly impact child survival rates, reinforcing the need for global policy action.</p>
+    
+            <hr />
+            <p><strong>Source Code:</strong></p>
+            <p>Click the button below to view the complete source code on GitHub.</p>
+            <a href="https://github.com/christabelosas/Child-mortality-clustering/blob/main/CLUSTERING%20USING%20K-MEANS%20AND%20DBSCAN%20METHOD.ipynb" target="_blank" class="btn btn-primary">View Source Code</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Project 4 Modal -->
+  <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project4ModalLabel">Analysis on the Impact of Bank Marketing Campaigns on Long-Term Deposit Promotions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Overview:</strong> This study applies machine learning classification techniques to evaluate the effectiveness of bank marketing campaigns in promoting long-term deposit subscriptions. Using predictive modeling, it aims to optimize campaign efficiency by identifying key factors influencing customer engagement.</p>
+
+            <p><strong>Problem Statement:</strong> Financial institutions face challenges in optimizing marketing strategies for long-term deposit promotions due to **low campaign productivity, high resource investment, and inefficient targeting**. This project provides a data-driven approach to improving marketing efficiency.</p>
+    
+            <p><strong>Methodology:</strong></p>
+            <ul>
+              <li><strong>Data Acquisition & Preparation:</strong> Data sourced from the UCI Machine Learning Repository, containing customer demographics and campaign performance indicators.</li>
+              <li><strong>Exploratory Data Analysis (EDA):</strong> Identified key features influencing customer behavior, assessed class imbalance, and visualized data distributions.</li>
+              <li><strong>Feature Engineering:</strong> Categorical variables were encoded, missing values handled, and dataset normalization was performed for model consistency.</li>
+              <li><strong>Model Development:</strong> Applied **K-Nearest Neighbors (KNN)**, **Decision Trees**, and **AdaBoost** classifiers to predict whether a customer would subscribe to a long-term deposit.</li>
+              <li><strong>Model Evaluation:</strong> Performance assessed using **Precision, Recall, F1-Score**, and **ROC Curves**, with a focus on improving campaign targeting efficiency.</li>
+            </ul>
+    
+            <p><strong>Results:</strong></p>
+            <ul>
+              <li>The **AdaBoost model** outperformed other classifiers, achieving an F1-Score of **0.57**, demonstrating improved predictive accuracy.</li>
+              <li>Feature selection techniques optimized model efficiency by reducing the number of variables while maintaining high performance.</li>
+              <li>The study highlights the significance of customer **engagement history, campaign duration, and previous interactions** in determining campaign success.</li>
+            </ul>
+    
+            <p><strong>Real-World Applications:</strong></p>
+            <ul>
+              <li>Helps banks improve **customer targeting** for marketing campaigns, leading to higher conversion rates.</li>
+              <li>Enables data-driven decision-making for **resource allocation and strategic planning** in financial institutions.</li>
+            </ul>
+    
+            <p><strong>Conclusion:</strong> This study demonstrates the power of machine learning in optimizing bank marketing strategies. By leveraging predictive analytics, financial institutions can enhance their marketing efforts, improve customer engagement, and maximize return on investment.</p>
+    
+            <hr />
+            <p><strong>Source Code:</strong></p>
+            <p>Click the button below to view the complete source code on GitHub.</p>
+            <a href="https://github.com/christabelosas/bank-marketing-campaign-analysis/blob/main/CLASSIFICATION%20USING%20KNN%20AND%20DECISION%20TREE.ipynb" target="_blank" class="btn btn-primary">View Source Code</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section bg-light">
+    <div class="container">
+      <h2 class="text-center">Skills & Certifications</h2>
+      <div class="row">
+        <!-- Technical Skills Card -->
+        <div class="col-md-6 mb-4">
+          <div class="skills-card">
+            <h5>Technical Skills</h5>
+            <ul>
+              <li>AWS Cloud Solutions</li>
+              <li>Data Analysis & Advanced Analytics</li>
+              <li>Machine Learning & Statistical Modelling</li>
+              <li>Data Visualization (Power BI, Tableau)</li>
+              <li>Python Programming & R</li>
+              <li>SQL Scripting & Query Optimisation</li>
+              <li>Database Management (MySQL, PostgreSQL)</li>
+              <li>Deep Learning (TensorFlow, Keras)</li>
+              <li>Cloud Platforms & Data Pipelines</li>
+              <li>Solution Architecture & Business Intelligence</li>
+              <li>Process Optimisation & Forecasting</li>
+              <li>Cross-functional Collaboration</li>
+              <li>Version Control (Git) & Jira</li>
+              <li>CRM Systems</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Certifications Card -->
+        <div class="col-md-6 mb-4">
+          <div class="skills-card">
+            <h5>Certifications</h5>
+            <ul>
+                <li>
+                    <a href="https://www.credly.com/badges/3b97e82e-97ae-498b-8acf-6a76849d2227/public_url" target="_blank">
+                      AWS Solutions Architect Certification
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.credly.com/badges/c5bad270-374e-4f1b-a73d-decc08e9e8b0/public_url" target="_blank">
+                      AWS Cloud Practitioner Certification
+                    </a>
+                </li>
+                <li>MSc Data Science (Distinction) - University of Salford</li>
+              <!-- Add additional certifications as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!-- Contact Me Section -->
+  <section id="contact" class="contact-section text-center text-white bg-dark">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="row">
+        <div class="col-lg-6">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:christabelosas4@gmail.com" class="text-white">christabelosas4@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="https://www.linkedin.com/in/christabel-iyamu/" target="_blank">
+            <img src="Icon/linkedin.png" alt="LinkedIn" class="social-icon">
+            LinkedIn
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4">
+          <a href="https://github.com/christabelosas" target="_blank">
+            <img src="Icon/github.png" alt="GitHub" class="social-icon">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
